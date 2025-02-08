@@ -9,7 +9,7 @@
     >
       <ewe-logo :noanimated="true" style="height: 320px; width: 320px" />
       <p class="text-150px" style="padding-right: 50px; margin-left: 50px">
-        <b style="font-weight: 400">ewe</b>OS
+        <b style="font-weight: 400; margin-right: -24px;">ewe</b>OS
       </p>
     </div>
   </div>
