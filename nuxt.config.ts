@@ -47,11 +47,6 @@ export default defineNuxtConfig({
       "Roboto:900",
     ],
   },
-  routeRules: {
-    "/blog/6": { redirect: "/blog/202405-progress-report" },
-    "/blog/5": { redirect: "/blog/202404-progress-report" },
-    "/blog/2": { redirect: "/blog/202403-eweos-roadmap" },
-  },
   runtimeConfig: {
     public: {
       siteUrl: publicWebUrl,
