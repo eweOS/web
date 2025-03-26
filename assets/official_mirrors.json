@@ -19,7 +19,11 @@
     "id": "eweos-us-las",
     "name": "eweOS Official Repo (Las Vegas, United States)",
     "url": "https://os-repo-us-las.ewe.moe",
-    "tags": ["Official"]
+    "tags": ["Official"],
+    "traffic_stats": {
+      "type": "vnstati",
+      "url": "https://os-repo-stats-us-las.ewe.moe"
+    }
   },
   {
     "id": "eweos-cn",
