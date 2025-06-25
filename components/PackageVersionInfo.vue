@@ -77,6 +77,35 @@ import moment from "moment";
 
 export default {
     props: ["pkglist"],
+    data: () => ({
+        moment: moment,
+        archs: ["x86_64", "aarch64", "riscv64", "loongarch64"],
+        enabled_archs: ["x86_64", "aarch64", "riscv64", "loongarch64"],
+        filterkey: null,
+    }),
+    computed: {
+        height() {
+            if (window.innerHeight > 800) return window.innerHeight - 320;
+            else return window.innerHeight;
+        },
+        headers() {
+            let ret = [
+                {
+                    title: "Package Name",
+                    key: "NAME",
+                    sortable: true,
+                },
+            ];
+            this.enabled_archs.forEach((arch) => {
+                ret.push({
+                    title: arch + " Status",
+                    key: "pkgdata-" + arch,
+                    sortable: false,
+                });
+            });
+            return ret;
+        },
+    },
     methods: {
         maxstr(arr) {
             return arr.reduce(
@@ -107,35 +136,6 @@ export default {
             return false;
         },
     },
-    computed: {
-        height() {
-            if (window.innerHeight > 800) return window.innerHeight - 320;
-            else return window.innerHeight;
-        },
-        headers() {
-            let ret = [
-                {
-                    title: "Package Name",
-                    key: "NAME",
-                    sortable: true,
-                },
-            ];
-            this.enabled_archs.forEach((arch) => {
-                ret.push({
-                    title: arch + " Status",
-                    key: "pkgdata-" + arch,
-                    sortable: false,
-                });
-            });
-            return ret;
-        },
-    },
-    data: () => ({
-        moment: moment,
-        archs: ["x86_64", "aarch64", "riscv64", "loongarch64"],
-        enabled_archs: ["x86_64", "aarch64", "riscv64", "loongarch64"],
-        filterkey: null,
-    }),
 };
 </script>
 
