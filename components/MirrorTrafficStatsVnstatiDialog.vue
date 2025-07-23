@@ -4,7 +4,6 @@
       <v-btn
         variant="text"
         icon="mdi-chart-line"
-        class="hidden-sm-and-down"
         v-bind="activatorProps"
       >
       </v-btn>
