@@ -65,6 +65,11 @@ const pkgargs = [
         desc: "Description",
     },
     {
+        arg: "GROUPS",
+        desc: "Groups",
+        isarr: true,
+    },
+    {
         arg: "URL",
         desc: "Upstream URL",
     },

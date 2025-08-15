@@ -2,15 +2,15 @@
     <v-row class="mt-4">
         <v-col cols="12" md="6">
             <v-select
+                v-model="enabled_archs"
                 label="Select Architecture"
                 variant="outlined"
                 density="compact"
-                v-model="enabled_archs"
                 :items="archs"
                 hide-details
                 single-line
                 multiple
-            ></v-select>
+            />
         </v-col>
         <v-col cols="12" md="6">
             <v-text-field
@@ -21,7 +21,7 @@
                 density="compact"
                 hide-details
                 single-line
-            ></v-text-field>
+            />
         </v-col>
     </v-row>
     <VDataTableVirtual
@@ -32,7 +32,7 @@
         :search="filterkey"
         fixed-header
     >
-        <template v-slot:[`item.NAME`]="{ item }">
+        <template #[`item.NAME`]="{ item }">
             <v-chip
                 variant="text"
                 :to="'/pkginfo/' + item.REPO + '/' + item.NAME"
@@ -49,22 +49,22 @@
         <template
             v-for="arch in archs"
             :key="arch"
-            v-slot:[`item.pkgdata-`+arch]="{ item }"
+            #[`item.pkgdata-`+arch]="{ item }"
         >
             <v-chip
+                v-if="item.ARCH?.[arch]"
                 class="mx-1 my-1 version-chip"
                 prepend-icon="mdi-package"
                 :color="is_max_ver(arch, item.ARCH) ? 'success' : 'warning'"
-                v-if="item.ARCH?.[arch]"
                 :to="'/pkginfo/' + item.REPO + '/' + item.NAME + '/' + arch"
             >
                 {{ item.ARCH[arch].VERSION }}
             </v-chip>
             <v-chip
+                v-else
                 class="mx-1 my-1"
                 prepend-icon="mdi-null"
                 color="grey"
-                v-else
             >
                 NULL
             </v-chip>
@@ -89,7 +89,7 @@ export default {
             else return window.innerHeight;
         },
         headers() {
-            let ret = [
+            const ret = [
                 {
                     title: "Package Name",
                     key: "NAME",
