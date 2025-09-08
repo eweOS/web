@@ -27,7 +27,7 @@
   },
   {
     "id": "eweos-cn",
-    "name": "eweOS Official Repo (China)",
+    "name": "eweOS Official Repo (China, via Cloudflare)",
     "url": "https://os-repo-cn.ewe.moe",
     "tags": ["Official", "Proxied"],
     "traffic_stats": {
