@@ -188,7 +188,7 @@ Current size of repositories:
 
 ![image](https://hackmd.io/_uploads/H13rp_9pxe.png)
 
-- experimental KDE environment on eweOS (by YUkariChiba)
+- experimental KDE environment on eweOS (by YukariChiba)
 
 ![image](https://hackmd.io/_uploads/rJx-Tucplx.png)
 
