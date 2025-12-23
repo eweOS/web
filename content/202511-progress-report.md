@@ -6,7 +6,7 @@ date: 2025-12-22
 
 > During October and November, eweOS achieved Hyper-V boot support and demonstrated success on the T-Head TH1520. This period featured extensive updates, including Linux 6.17 and KDE 6.20, plus critical fixes for LoongArch and GTK4. The community welcomed new contributors while maintaining strong package parity across architectures.
 
-![eweOS Running on T-Head TH1520](https://hackmd.io/_uploads/rJdmqE8X-e.png)
+![eweOS Running on T-Head TH1520](/content-img/202511-progress-report/th1520.png)
 
 <center>eweOS Running on T-Head TH1520, by <a href="https://github.com/ziyao233">Yao Zi</a></center>
 
@@ -53,7 +53,7 @@ date: 2025-12-22
 
 ## New Contributors
 
-[WeirdGumi](https://github.com/WeirdGumi) submitted the [first PR](https://github.com/eweOS/kernel-config/pull/23) to our kernel-config becomes the new contributor, welcome!
+[WeirdGumi](https://github.com/WeirdGumi) submitted the [first PR](https://github.com/eweOS/kernel-config/pull/23) to our kernel-config, welcome!
 
 ## Upstream Contribution
 
