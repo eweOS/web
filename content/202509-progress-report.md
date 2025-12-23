@@ -186,11 +186,11 @@ Current size of repositories:
 
 ### Gallery
 
-![image](https://hackmd.io/_uploads/H13rp_9pxe.png)
+![image](/content-img/202509-progress-report/kde.png)
 
 - experimental KDE environment on eweOS (by YukariChiba)
 
-![image](https://hackmd.io/_uploads/rJx-Tucplx.png)
+![image](/content-img/202509-progress-report/ghc-rv.png)
 
 - GHCi running on eweOS riscv64 (by Yao Zi)
 
