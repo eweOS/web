@@ -12,21 +12,9 @@
     "tags": []
   },
   {
-    "id": "sdust-cn",
-    "name": "Shandong University of Science and Technology (China)",
-    "url": "https://mirrors.sdust.edu.cn",
-    "tags": []
-  },
-  {
     "id": "hit-cn",
     "name": "Harbin Institute of Technology (China)",
     "url": "https://mirrors.hit.edu.cn",
     "tags": []
-  },
-  {
-    "id": "cuc-fma-cn",
-    "name": "Communication University of China (FMA) (China, via Cloudflare)",
-    "url": "https://ewemirror.ftrmedia.org",
-    "tags": ["Proxied"]
   }
 ]
